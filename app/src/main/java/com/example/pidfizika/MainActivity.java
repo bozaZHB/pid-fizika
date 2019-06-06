@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!edtSetTemperature.getText().toString().isEmpty())
-                    mqttHelper.sendMessage("zhb/set", String.valueOf(edtSetTemperature.getText()));
+                    mqttHelper.sendMessage("zhb/set/vrednost", String.valueOf(edtSetTemperature.getText()));
                 else {
                     Log.w("ERROR", "edittext mora biti broj");
                 }
